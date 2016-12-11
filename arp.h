@@ -24,9 +24,9 @@ struct arphdr
     u8_t  hw_len;    /* length of hardware address, 6 for MAC */
     u8_t  pro_len;   /* length of protocol address, 4 for IPV4 */
     u16_t opcode;    /* ARP/RARP operation */
-    u8_t    smac[6];   /* sender hardware address */
+    u8_t  smac[6];   /* sender hardware address */
     u32_t sip;       /* sender protocol address */
-    u8_t    dmac[6];   /* target hardware address */
+    u8_t  dmac[6];   /* target hardware address */
     u32_t dip;       /* target protocol address */
 }__attribute__((packed));
 
